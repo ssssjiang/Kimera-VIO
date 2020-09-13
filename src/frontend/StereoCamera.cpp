@@ -173,7 +173,7 @@ void StereoCamera::stereoDisparityReconstruction(const cv::Mat& left_img,
     sbm->setUniquenessRatio(uniqueness_ratio_);
     sbm->setSpeckleRange(speckle_range_);
     sbm->setSpeckleWindowSize(speckle_window_size_);
-    if (!ROI1_.empty() && !ROI2_.empty()) {
+    if (ROI1_.area() != 0 && ROI2_.area() != 0) {
       sbm->setROI1(ROI1_);
       sbm->setROI2(ROI2_);
     } else {
