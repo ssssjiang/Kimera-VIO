@@ -36,8 +36,8 @@
 // TODO(Toni): do not forward declare that much!!
 // Forward declare classes.
 namespace gtsam {
-class Point2;
-class Point3;
+//class Point2;
+//class Point3;
 class Pose3;
 class Symbol;
 typedef Eigen::MatrixXd Matrix;
