@@ -26,3 +26,7 @@
 
 % Ignore large vocabulary files
 /vocabulary/*
+
+.idea/
+
+cmake-build-debug/
